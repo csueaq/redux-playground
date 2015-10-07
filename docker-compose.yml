@@ -1,0 +1,16 @@
+frontend :
+  image : koa-react
+  links :
+    - mongo
+    - redis
+  ports:
+    - "3000:3000"
+mongo :
+  image : mongo
+  ports:
+    - "27017:27017"
+  command: --smallfiles
+redis :
+  image : redis
+  ports:
+    - "6379:6379"
