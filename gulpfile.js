@@ -21,17 +21,13 @@ gulp.task('compress', ['browserify'], function(){
 });
 
 
-gulp.task('csslib', function(){
-	return gulp.src('./node_modules/bootstrap/dist/css/bootstrap.min.css')
-		.pipe(gulp.dest('./public/css/lib'))
-});
 gulp.task('clean',function(){
 		gulp.src('./public/js/*.js',{read: false})
 		.pipe(clean());
 });
 
 
-gulp.task('build',['compress','csslib'], function(){
+gulp.task('build',['compress'], function(){
 	return gulp.src('./tmp',{read: false})
 		.pipe(clean());
 });

@@ -9,7 +9,7 @@ module.exports = React.createClass({displayName: 'page',
 		return (
 			<html>
 				<HeadComponent />
-				<BodyComponent date={this.props.name} />
+				<BodyComponent />
 			</html>
 		);
 	}

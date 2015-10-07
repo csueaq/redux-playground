@@ -1,35 +1,30 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'start' ]
-2 info using npm@2.11.3
-3 info using node@v0.12.5
-4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info prestart koa-react-seed@0.0.0
-6 info start koa-react-seed@0.0.0
-7 verbose unsafe-perm in lifecycle true
-8 info koa-react-seed@0.0.0 Failed to exec start script
-9 verbose stack Error: koa-react-seed@0.0.0 start: `node --harmony server.js`
-9 verbose stack Exit status 1
-9 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
-9 verbose stack     at EventEmitter.emit (events.js:110:17)
-9 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
-9 verbose stack     at ChildProcess.emit (events.js:110:17)
-9 verbose stack     at maybeClose (child_process.js:1015:16)
-9 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
-10 verbose pkgid koa-react-seed@0.0.0
-11 verbose cwd /usr/local/app
-12 error Linux 4.0.5-boot2docker
-13 error argv "node" "/usr/local/bin/npm" "start"
-14 error node v0.12.5
-15 error npm  v2.11.3
-16 error code ELIFECYCLE
-17 error koa-react-seed@0.0.0 start: `node --harmony server.js`
-17 error Exit status 1
-18 error Failed at the koa-react-seed@0.0.0 start script 'node --harmony server.js'.
-18 error This is most likely a problem with the koa-react-seed package,
-18 error not with npm itself.
-18 error Tell the author that this fails on your system:
-18 error     node --harmony server.js
-18 error You can get their info via:
-18 error     npm owner ls koa-react-seed
-18 error There is likely additional logging output above.
-19 verbose exit [ 1, true ]
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'start' ]
+2 info using npm@2.14.2
+3 info using node@v4.0.0
+4 verbose stack Error: Failed to parse json
+4 verbose stack Trailing comma in object at 26:3
+4 verbose stack   }
+4 verbose stack   ^
+4 verbose stack     at parseError (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:379:11)
+4 verbose stack     at parseJson (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:68:23)
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:48:5
+4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (evalmachine.<anonymous>:380:3)
+5 verbose cwd /Users/Izzy/work/github/redux-playground
+6 error Darwin 14.0.0
+7 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
+8 error node v4.0.0
+9 error npm  v2.14.2
+10 error file /Users/Izzy/work/github/redux-playground/package.json
+11 error code EJSONPARSE
+12 error Failed to parse json
+12 error Trailing comma in object at 26:3
+12 error   }
+12 error   ^
+13 error File: /Users/Izzy/work/github/redux-playground/package.json
+14 error Failed to parse package.json data.
+14 error package.json must be actual JSON, not just JavaScript.
+14 error
+14 error This is not a bug in npm.
+14 error Tell the package author to fix their package.json file. JSON.parse
+15 verbose exit [ 1, true ]

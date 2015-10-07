@@ -1,7 +1,6 @@
-var $ = require('jquery');
-require('bootstrap');
 
-$(document).ready(function() {
 
+
+document.addEventListener("DOMContentLoaded", function(event) {
     console.log("empty place holder");
 });

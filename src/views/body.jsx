@@ -5,7 +5,7 @@ module.exports = React.createClass({displayName: 'body',
         return (
             <body>
                 <h1>
-                    Welcome to Page 1 , my name is {this.props.name}
+                    Welcome to Page 1 , my name is cnm
                 </h1>
                 <script src="/js/bundle.js"/>
             </body>
