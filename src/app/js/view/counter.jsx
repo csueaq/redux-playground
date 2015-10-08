@@ -5,10 +5,9 @@ import addAction from '../actionCreator/counterActionCreator'
 class counter extends React.Component {
     add() {
         this.props.dispatch(addAction());
-        console.log(this.props);
     }
     componentDidMount(){
-        console.log(this.props);
+        //console.log(this.props);
     }
     componentDidUpdate() {
         //console.log(this.props);
@@ -26,9 +25,8 @@ class counter extends React.Component {
 
 }
 function mapStateToProps(state) {
-    //console.log(state);
     return {
-        count: state.count
+        count: state.toJS().count
     };
 }
 export default connect(mapStateToProps)(counter)
