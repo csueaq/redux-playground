@@ -1,5 +1,5 @@
 {
-  "name": "koa-react-seed",
+  "name": "redux-playground",
   "version": "0.0.0",
   "devDependencies": {
     "browserify": "^9.0.3",
