@@ -4,11 +4,18 @@ var source = require('vinyl-source-stream');
 var uglify = require('gulp-uglify');
 var clean = require('gulp-rimraf');
 var zip = require('gulp-zip');
+var babel = require('babelify');
+
 
 
  
 gulp.task('browserify',['clean'], function() {
-    return browserify('./src/app/js/app.js')
+    return browserify({
+		entries: './src/app/js/app.js',
+		extensions: ['.jsx'],
+		debug: true
+	})
+		.transform(babel)
         .bundle()
         .pipe(source('bundle.js'))
         .pipe(gulp.dest('./tmp/js/'));
