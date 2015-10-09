@@ -10,7 +10,7 @@ let initialTimeState = Map(
 );
 
 export default function (state = initialTimeState, action={}) {
-    console.log("state is " + state.count + " action is " + action.type);
+    console.log("state is " + state.toJS().count + " action is " + action.type);
     switch (action.type) {
         case 'INCREMENT':
             //state.count+=1;
