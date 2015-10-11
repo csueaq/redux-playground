@@ -1,9 +1,8 @@
 var React = require('react');
 
+module.exports = React.createClass({
 
 
-
-module.exports = React.createClass({displayName: 'body',
     render: function() {
         return (
             <body>
