@@ -2,8 +2,6 @@ import React from 'react'
 import { connect } from 'react-redux'
 import addAction from '../actionCreator/counterActionCreator'
 import Header from './nav/header'
-import RaisedButton from 'material-ui/lib/raised-button'
-import Avatar from 'material-ui/lib/avatar'
 
 
 
@@ -23,9 +21,9 @@ const counter = React.createClass({
         return (
             <div>
                 <Header />
-                <Avatar>{count}</Avatar>
+                <p>{count}</p>
                 <div>
-                    <RaisedButton onClick={this.add} label='plus' />
+                    <button onClick={this.add}> plus </button>
                 </div>
 
             </div>
