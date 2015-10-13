@@ -4,6 +4,8 @@ var app = koa();
 var serve = require('koa-static');
 var React = require('react');
 var indexRouter = require('./src/routers/index');
+var serve = require('koa-static-cache');
+app.use(serve('public',{gzip:true}));
 
 
 
