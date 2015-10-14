@@ -1,8 +1,5 @@
 import App from './app.jsx'
 import React from 'react'
-let injectTapEventPlugin = require("react-tap-event-plugin");
-injectTapEventPlugin();
-
 import counterStore from './store/store'
 
 

@@ -4,8 +4,10 @@
 
 import { createStore, combineReducers } from 'redux'
 import  counter  from '../reducer/counterReducer'
+import { Map } from 'immutable'
 
 export default function () {
-    return createStore(counter);
+    const initialState = Map(window.__INITIAL_STATE__);
+    return createStore(counter,initialState);
 }
 
