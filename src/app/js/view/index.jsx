@@ -5,7 +5,7 @@ import Header from './nav/header'
 
 
 
-const counter = React.createClass({
+const index = React.createClass({
     add() {
         this.props.dispatch(addAction());
     },
@@ -36,4 +36,4 @@ function mapStateToProps(state) {
         count: state.toJS().count
     };
 }
-export default connect(mapStateToProps)(counter)
+export default connect(mapStateToProps)(index)

@@ -11,7 +11,7 @@ import { createStore } from 'redux'
 import  counter  from '../app/js/reducer/counterReducer'
 import App from '../app/js/app.jsx'
 import { Provider } from 'react-redux'
-import renderFullPage from '../serverRendering/renderIndex'
+import renderFullPage from '../serverRendering/renderFullPage'
 
 
 const store = createStore(counter);
